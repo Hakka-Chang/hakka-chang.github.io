@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #f5f1ea;
+  color: #333;
+}
+
+header {
+  background: #6b4f3b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  background: #e6ded3;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #6b4f3b;
+  font-weight: bold;
+}
+
+.hero {
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #6b4f3b;
+  color: white;
+  margin-top: 40px;
+}
+
+button {
+  background: #6b4f3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #8a6a52;
+}
+
+nav a,
+button {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+nav a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f4d8ba;
+  outline-offset: 3px;
+}
+
+.hero {
+  min-height: 240px;
+  padding: 0 20px;
+  font-size: clamp(24px, 4vw, 32px);
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 220px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 24px 16px 32px;
+  }
+
+  .card {
+    margin-bottom: 18px;
+  }
+}
