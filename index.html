@@ -1,13 +1,124 @@
-<style>
-  body {
-    font-family: sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: #111;
-    color: #eee;
-  }
-  h1 {
-    border-bottom: 1px solid #444;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Calm Cafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      background: #f5f1ea;
+      color: #333;
+    }
+
+    header {
+      background: #6b4f3b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background: #e6ded3;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #6b4f3b;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 300px;
+      background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #6b4f3b;
+      color: white;
+      margin-top: 40px;
+    }
+
+    button {
+      background: #6b4f3b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #8a6a52;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Calm Cafe
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="#">Access</a>
+</nav>
+
+<div class="hero">
+  静かな時間を、ここで
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>About</h2>
+    <p>都会の喧騒から少し離れて、ゆっくりとした時間を過ごせるカフェです。</p>
+  </div>
+
+  <div class="card">
+    <h2>Menu</h2>
+    <p>・ハンドドリップコーヒー<br>
+       ・カフェラテ<br>
+       ・季節のスイーツ</p>
+    <button onclick="alert('ご注文ありがとうございます ☕')">
+      注文する
+    </button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Calm Cafe
+</footer>
+
+</body>
+</html>
